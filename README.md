@@ -19,7 +19,7 @@ Our data includes heterogeneous images, representing
 different environments, situations and subjects, coming
 from various sources.
 
-<img align="left" src="http://www.fillmurray.com/100/100](https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png">
+<img align="left" width="60%" src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png">
 
 
 - Imagenette: https://github.com/fastai/imagenette
