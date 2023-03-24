@@ -23,18 +23,12 @@ from various sources.
 <img align="left" width="60%" src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png">
 
 <br />
-<br />
-<br />
-
 - Imagenette: https://github.com/fastai/imagenette
 - Pascal: https://deepai.org/dataset/pascal-voc
 - Places: https://paperswithcode.com/dataset/places205
 - Birds: https://www.kaggle.com/gpiosenka/100-bird-species
 - Flowers: https://www.robots.ox.ac.uk/~vgg/data/flowers/102/
 
-<br />
-<br />
-<br />
 <br />
 
 # Colorization models overview
