@@ -154,6 +154,29 @@ more realistic than the original brown tone.
   <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/conclusion_chromagan.png" width="48%"/>
 </p>
 
+As expected, the model reaching the overall best performances
+is the state-of-the-art ChromaGAN, followed by
+Siggraph17. Eccv16 produces vibrant colorizations with the
+use of class-rebalancing, but at the expense of some overaggressively
+and visibly artificial colorizations. In general,
+InstColorization is able to improve the results of Eccv16,
+except for those classes showing bright and rare colors (low
+accuracy when tested with AlexNet finetuned on birds and
+flowers images). Moreover, its segmentated colorization
+can lead to incoherent results when object detection doesn’t
+work properly, and this came out in the Turing test scores.
+We have also seen that some image filtering concerning
+luminance and contrast can improve the final colorization.
+In conclusion, our baseline performs very poorly due to
+the limited amount of data for the training, the simple architecture
+and the absence of a colorization-adapted loss
+function. However, the introduction of cartoonization in the
+training and testing phases seems to slightly improve the final
+results, meaning that more sectorial and definite areas
+are easier to colorize. This opens up new perspectives for
+future works based on the combination of state-of-the-art
+models with cartoonization.
+
 ### Requirements
 - python 3.6 or 3.8
 - virtualenv wrapper: https://virtualenvwrapper.readthedocs.io/en/latest/
