@@ -40,3 +40,22 @@ Here you can find the pretrained models used in this project:
 
 ### InstColorization
 The code to run this model is contained in the notebook: `src/models/InstColorization.ipynb`.
+
+### Repository Guideline
+- `img` folder
+    - `img/colorized` folder: colorized images by our models
+    - `img/filtered` folder: filtered images
+    - `img/original` folder: original images
+- `pre-trained-models` folder: saved pre-trained models (it should also contain ChromaGAN.h5 and colorize.tfmodel)
+- `report` folder: report PDF and some slides
+- `requirements` folder: requirements for each model
+- `resources` folder:
+    - `resources/classification` folder: text files containing the performance of AlexNet (pre-trained on ImageNET) when classifying the colorized images. We also performed fine-tuning of AlexNET on Birds and Flowers datasets and feature extraction of AlexNET on a subset of ImageNet
+    - `resources/img_classes` folder: info about some datasets labels
+    - `resources/LPIPS` folder: text files containing the LPIP metric results
+    - `resources/PSNRandSSIM` folder: text files containing the PSNR and SSIM metrics results
+- `src` folder: python code for AlexNET class definition, dataset normalization, image filtering, image cartoonization, classification, fine-tuning, feature extraction, metrics computation, graphical representation of the Turing Test results 
+    - `src/models` folder: python code for running the colorization models
+
+
+
