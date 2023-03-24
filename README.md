@@ -80,6 +80,15 @@ colored images and from them we take the a and b channels and combine them with 
 
 The cartoonization model is taken from in [X. Wang and J. Yu - "Learning to cartoonize using white-box cartoon representations" (2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_Learning_to_Cartoonize_Using_White-Box_Cartoon_Representations_CVPR_2020_paper.pdf).
 
+# Metrics
+The following illustrates the colorization metrics used and the results for the colorization models under consideration.
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/metrics.png" width="48%"/>
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/metrics_results.png" width="48%"/>
+</p>
+
+
 ### Requirements
 - python 3.6 or 3.8
 - virtualenv wrapper: https://virtualenvwrapper.readthedocs.io/en/latest/
