@@ -54,13 +54,31 @@ from various sources.
   <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/ChromaGAN6.png" width="48%"/>
 </p>
 
-
 Here you can find the pretrained models considered in this project:
 - Dahl: https://tinyclouds.org/colorize/ (Download section)
 - Zhang eccv_16: https://github.com/richzhang/colorization/blob/master/colorizers/eccv16.py - related paper [here](https://arxiv.org/abs/1603.08511)
 - Zhang siggraph17: https://github.com/richzhang/colorization/blob/master/colorizers/siggraph17.py - related paper [here](https://arxiv.org/abs/1705.02999)
 - ChromaGAN: https://github.com/pvitoria/ChromaGAN - related paper [here](https://arxiv.org/abs/1907.09837)
 - InstColorization: https://github.com/ericsujw/InstColorization - related paper [here](https://arxiv.org/abs/2005.10825)
+
+We propose as baseline a simple autoencoder with mean squared error loss. Here, the encoder should learn a compact representation
+of the greyscale input images and the decoder should
+generate the corresponding coloured image. 
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/baseline1.png" width="48%"/>
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/baseline2.png" width="48%"/>
+</p>
+
+The model was trained and validated on all the data available to us, but
+instead of using the original dataset, we considered the cartoonized version of the images. As we can see from the example, this cartoonization provides a
+fine-grained result and exclude noisy elements that could interfere
+with the colorization task. This is done in order to produce a more precise and sectorial colorization. 
+
+Therefore, the model produces cartoonized
+colored images and from them we take the a and b channels and combine them with the L channel of the original input images. In this way we mantain the original details of the pictures and sometimes we get better results than the ones obtained with the baseline without cartoonization.
+
+The cartoonization model is taken from in [X. Wang and J. Yu - "Learning to cartoonize using white-box cartoon representations" (2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_Learning_to_Cartoonize_Using_White-Box_Cartoon_Representations_CVPR_2020_paper.pdf).
 
 ### Requirements
 - python 3.6 or 3.8
