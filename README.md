@@ -9,6 +9,41 @@ through both quantitative and qualitative metrics,
 with a final evaluation of the results with respect to image
 filtering.
 
+# Dataset
+
+We considered three types of images: 4023 originally
+colored images from five different datasets, 18 originally
+black and white images from various artists and 180 filtered
+images obtained starting
+from 18 originally colored images.
+Our data includes heterogeneous images, representing
+different environments, situations and subjects, coming
+from various sources.
+
+<img align="left" width="60%" src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png">
+
+<br />
+<br />
+<br />
+
+- Imagenette: https://github.com/fastai/imagenette
+- Pascal: https://deepai.org/dataset/pascal-voc
+- Places: https://paperswithcode.com/dataset/places205
+- Birds: https://www.kaggle.com/gpiosenka/100-bird-species
+- Flowers: https://www.robots.ox.ac.uk/~vgg/data/flowers/102/
+
+<br />
+<br />
+<br />
+<br />
+
+# Colorization models overview
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Covid19-related-tweets-Network-Analysis/blob/8520d5c3b42ec8d9a9a6a7481dc560d18258362a/report/Network%20Science.png"/>
+</p>
+
+
 Here you can find the pretrained models considered in this project:
 - Dahl: https://tinyclouds.org/colorize/ (Download section)
 - Zhang eccv_16: https://github.com/richzhang/colorization/blob/master/colorizers/eccv16.py - related paper [here](https://arxiv.org/abs/1603.08511)
@@ -58,37 +93,5 @@ The code to run this model is contained in the notebook: `src/models/InstColoriz
     - `resources/PSNRandSSIM` folder: text files containing the PSNR and SSIM metrics results
 - `src` folder: python code for AlexNET class definition, dataset normalization, image filtering, image cartoonization, classification, fine-tuning, feature extraction, metrics computation, graphical representation of the Turing Test results 
     - `src/models` folder: python code for running the colorization models
-
-# Dataset
-
-We considered three types of images: 4023 originally
-colored images from five different datasets, 18 originally
-black and white images from various artists and 180 filtered
-images obtained starting
-from 18 originally colored images.
-Our data includes heterogeneous images, representing
-different environments, situations and subjects, coming
-from various sources.
-
-<img align="left" width="60%" src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png">
-
-<br />
-<br />
-<br />
-
-- Imagenette: https://github.com/fastai/imagenette
-- Pascal: https://deepai.org/dataset/pascal-voc
-- Places: https://paperswithcode.com/dataset/places205
-- Birds: https://www.kaggle.com/gpiosenka/100-bird-species
-- Flowers: https://www.robots.ox.ac.uk/~vgg/data/flowers/102/
-
-<br />
-<br />
-<br />
-<br />
-
-# Colorization models overview
-
-
 
 
