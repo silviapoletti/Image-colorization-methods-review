@@ -19,9 +19,7 @@ Our data includes heterogeneous images, representing
 different environments, situations and subjects, coming
 from various sources.
 
-<p align="center">
-  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png" width="50%"/>
-</p>
+![image](https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png){: style="float: left"}
 
 - Imagenette: https://github.com/fastai/imagenette
 - Pascal: https://deepai.org/dataset/pascal-voc
@@ -35,6 +33,10 @@ Here you can find the pretrained models used in this project:
 - Zhang siggraph17: https://github.com/richzhang/colorization/blob/master/colorizers/siggraph17.py - related paper [here](https://arxiv.org/abs/1705.02999)
 - ChromaGAN: https://github.com/pvitoria/ChromaGAN - related paper [here](https://arxiv.org/abs/1907.09837)
 - InstColorization: https://github.com/ericsujw/InstColorization - related paper [here](https://arxiv.org/abs/2005.10825)
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png" width="50%"/>
+</p>
 
 ### Requirements
 - python 3.6 or 3.8
