@@ -19,9 +19,8 @@ Our data includes heterogeneous images, representing
 different environments, situations and subjects, coming
 from various sources.
 
-<p align="center">
-  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png" width="50%"/>
-</p>
+<img align="left" width="100" height="100" src="[http://www.fillmurray.com/100/100](https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png)">
+
 
 - Imagenette: https://github.com/fastai/imagenette
 - Pascal: https://deepai.org/dataset/pascal-voc
@@ -37,6 +36,9 @@ Here you can find the pretrained models used in this project:
 - InstColorization: https://github.com/ericsujw/InstColorization - related paper [here](https://arxiv.org/abs/2005.10825)
 
 
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png" width="50%"/>
+</p>
 
 ### Requirements
 - python 3.6 or 3.8
