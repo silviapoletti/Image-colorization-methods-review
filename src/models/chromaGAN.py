@@ -16,11 +16,11 @@ from os.path import isfile, join
 DATA_DIR = os.path.join('../../img/original/test')
 OUT_DIR = os.path.join('../../img/colorized/chromagan/test')
 
-MODEL_DIR = os.path.join('../../models')
+MODEL_DIR = os.path.join('../../pre-trained-models')
 BATCH_SIZE = 1
 
 # TRAINING INFORMATION
-PRETRAINED = "../../models/ChromaGAN.h5"
+PRETRAINED = "../../pre-trained-models/ChromaGAN.h5"
 
 file_list = [f for f in listdir(DATA_DIR) if (isfile(join(DATA_DIR, f)) and f != '.DS_Store')]
 size = len(file_list)  # 2323

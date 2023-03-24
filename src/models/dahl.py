@@ -21,7 +21,7 @@ def load_image(path):
     return (img[:, :, 0] + img[:, :, 1] + img[:, :, 2]) / 3.0
 
 
-with open("../../models/colorize.tfmodel", mode='rb') as f:
+with open("../../pre-trained-models/colorize.tfmodel", mode='rb') as f:
     fileContent = f.read()
 
 graph_def = tf.GraphDef()
@@ -32,8 +32,8 @@ tf.import_graph_def(graph_def, input_map={"grayscale": grayscale}, name='')
 
 # The following paths refer to the ImageNet directory containing 12 sub-directories,
 # one for each of the 12 classes.
-imageNet_input_dir = '../../img/original/ImageNet/'
-imageNet_output_dir = '../../img/colorized/dahl/ImageNet/'
+imageNet_input_dir = '../../img/original/ImageNet/'               # <-- not present in GitHub
+imageNet_output_dir = '../../img/colorized/dahl/ImageNet/'        # <-- not present in GitHub
 
 # if we have a directory containing sub-directories:
 onlydirectories = [f for f in listdir(imageNet_input_dir) if not isfile(join(imageNet_input_dir, f))]

@@ -22,9 +22,9 @@ model = 'BW'  # orig, BW, chromagan, dahl, siggraph, su, zhang,
 # The directory should be organized in 12 subdirectories, one for each of the 12 classes.
 # Each subdirectory contains 50 images.
 if model == 'orig' or model == 'BW':
-    test_path = '../img/original/classification_test/'
+    test_path = '../img/original/test/'
 else:
-    test_path = '../img/colorized/'+model+'/classification_test/'
+    test_path = '../img/colorized/'+model+'/test/'
 
 # Read the ImageNet categories:
 with open("../resources/img_classes/imagenet_classes.txt", "r") as f:

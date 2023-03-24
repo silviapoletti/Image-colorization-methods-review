@@ -18,7 +18,7 @@ model = 'zhang'  # orig, chromagan, dahl, siggraph, su, zhang,
 # The following path refer to the test directory of ri-colorized images
 # from ImageNet or Birds and Flowers.
 # The train directory should contain about 75% of data, the test directory about 25%
-test_path = '../img/colorized/'+model+'/dataset_test/'
+test_path = '../img/colorized/'+model+'/test/'
 
 dataset = 'imagenet'  # imagenet, birdsflowers
 

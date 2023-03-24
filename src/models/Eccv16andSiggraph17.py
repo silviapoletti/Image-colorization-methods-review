@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import torch
 
-from colorization import colorizers
-from colorization.colorizers.util import load_img, preprocess_img, postprocess_tens
+from Eccv16andSiggraph17_utils import *
+from Eccv16andSiggraph17_utils.util import load_img, preprocess_img, postprocess_tens
 
 from os import listdir
 from os.path import isfile, join

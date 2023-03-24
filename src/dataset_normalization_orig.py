@@ -14,8 +14,8 @@ will be used for standardization in the test set for the finetuning and feature 
 # The following paths refer to a train and test directory of original images
 # from ImageNet or Birds and Flowers.
 # The train directory should contain about 75% of data, the test directory about 25%
-orig_train = '../img/original/dataset_train/'
-orig_test = '../img/original/dataset_test/'
+orig_train = '../img/original/train/'   # <-- not present in Github
+orig_test = '../img/original/test/'
 
 dataset = 'imagenet'  # imagenet, birdsflowers
 
