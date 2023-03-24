@@ -143,6 +143,17 @@ colorization is an ambiguous task: the model colors the
 grass with a plausible green tone, which actually could result
 more realistic than the original brown tone.
 
+# Colorization results 
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/conclusion_baseline.png" width="48%"/>
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/conclusion_dahl.png" width="48%"/>
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/conclusion_ECCV16.png" width="48%"/>
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/conclusion_InstColorization.png" width="48%"/>
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/conclusion_Siggraph17.png" width="48%"/>
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/conclusion_chromagan.png" width="48%"/>
+</p>
+
 ### Requirements
 - python 3.6 or 3.8
 - virtualenv wrapper: https://virtualenvwrapper.readthedocs.io/en/latest/
