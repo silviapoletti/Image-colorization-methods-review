@@ -19,7 +19,7 @@ Our data includes heterogeneous images, representing
 different environments, situations and subjects, coming
 from various sources.
 
-![image](https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png){: style="float: left"}
+![image](https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png){: style="float: left" width="30%"}
 
 - Imagenette: https://github.com/fastai/imagenette
 - Pascal: https://deepai.org/dataset/pascal-voc
