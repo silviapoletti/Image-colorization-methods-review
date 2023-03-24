@@ -19,7 +19,7 @@ Here you can find the pretrained models used in this project:
 - virtualenv wrapper: https://virtualenvwrapper.readthedocs.io/en/latest/
 
 ## Dahl
-- download the pretrained model and place the `colorize.tfmodel` file in the `models` folder
+- download the pretrained model and place the `colorize.tfmodel` file in the `pre-trained-models` folder
 - create a virtual environment: `mkvirtualenv --python=python3 dahl`
 - install the requirements: `pip install -r requirements_dahl.txt`
 - position yourself into the following folder: `cd src/models`
@@ -32,7 +32,7 @@ Here you can find the pretrained models used in this project:
 - run the model: `python3 Eccv16andSiggraph17.py`
 
 ## ChromaGAN
-- download the pretrained model and place the `ChromaGAN.h5` file in the `models` folder
+- download the pretrained model and place the `ChromaGAN.h5` file in the `pre-trained-models` folder
 - create a virtual environment using python 3.6: `mkvirtualenv --python=python3 chromaGAN`
 - install the requirements: `pip install -r requirements_chromaGAN.txt`
 - position yourself into the following folder: `cd src/models`
