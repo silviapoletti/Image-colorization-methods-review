@@ -1,11 +1,32 @@
 # Image colorization methods: a Review
 
-We consider the following datasets:
+The colorization of greyscale images is an ill-posed
+problem that was approached in different ways in literature.
+This project provides a comparative analysis concerning
+five pre-trained colorization models and a cartoonization-based
+baseline of our invention. The performances are assessed
+through both quantitative and qualitative metrics,
+with a final evaluation of the results with respect to image
+filtering.
+
+
+We considered three types of images: 4023 originally
+colored images from five different datasets, 18 originally
+black and white images from various artists and 180 filtered
+images obtained starting
+from 18 originally colored images.
+Our data includes heterogeneous images, representing
+different environments, situations and subjects, coming
+from various sources:
 - Imagenette: https://github.com/fastai/imagenette
 - Pascal: https://deepai.org/dataset/pascal-voc
 - Places: https://paperswithcode.com/dataset/places205
 - Birds: https://www.kaggle.com/gpiosenka/100-bird-species
 - Flowers: https://www.robots.ox.ac.uk/~vgg/data/flowers/102/
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9886d32f12de1853a68ea5309520165e9d5aaf03/report/datasets.png" width="50%"/>
+</p>
 
 Here you can find the pretrained models used in this project:
 - Dahl: https://tinyclouds.org/colorize/ (Download section)
