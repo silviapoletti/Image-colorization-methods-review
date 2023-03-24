@@ -14,29 +14,29 @@ Here you can find the pretrained models used in this project:
 - ChromaGAN: https://github.com/pvitoria/ChromaGAN - related paper [here](https://arxiv.org/abs/1907.09837)
 - InstColorization: https://github.com/ericsujw/InstColorization - related paper [here](https://arxiv.org/abs/2005.10825)
 
-## Requirements
+### Requirements
 - python 3.6 or 3.8
 - virtualenv wrapper: https://virtualenvwrapper.readthedocs.io/en/latest/
 
-## Dahl
+### Dahl
 - download the pretrained model and place the `colorize.tfmodel` file in the `pre-trained-models` folder
 - create a virtual environment: `mkvirtualenv --python=python3 dahl`
 - install the requirements: `pip install -r requirements_dahl.txt`
 - position yourself into the following folder: `cd src/models`
 - run the model: `python3 dahl.py`
     
-## Eccv16 and Siggraph17
+### Eccv16 and Siggraph17
 - create a virtual environment: `mkvirtualenv --python=python3 zhang`
 - install the requirements: `pip install -r requirements_zhang.txt`
 - position yourself into the following folder: `cd src/models`
 - run the model: `python3 Eccv16andSiggraph17.py`
 
-## ChromaGAN
+### ChromaGAN
 - download the pretrained model and place the `ChromaGAN.h5` file in the `pre-trained-models` folder
 - create a virtual environment using python 3.6: `mkvirtualenv --python=python3 chromaGAN`
 - install the requirements: `pip install -r requirements_chromaGAN.txt`
 - position yourself into the following folder: `cd src/models`
 - run the model: `python3 chromaGAN.py`
 
-## InstColorization
+### InstColorization
 The code to run this model is contained in the notebook: `src/models/InstColorization.ipynb`.
