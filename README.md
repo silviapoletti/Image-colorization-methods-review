@@ -80,7 +80,7 @@ colored images and from them we take the a and b channels and combine them with 
 
 The cartoonization model is taken from in [X. Wang and J. Yu - "Learning to cartoonize using white-box cartoon representations" (2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_Learning_to_Cartoonize_Using_White-Box_Cartoon_Representations_CVPR_2020_paper.pdf).
 
-# Metrics
+# Colorization metrics
 The following illustrates the colorization metrics used and the results for the colorization models under consideration.
 
 <p align="center">
@@ -88,6 +88,66 @@ The following illustrates the colorization metrics used and the results for the 
   <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/metrics_results.png" width="48%"/>
 </p>
 
+# Turing test
+The Turing test is a qualitative metric based on human
+perceptions. Due to our limited resources we just elaborate
+a short survey on Google Forms, divided into two sections:
+we asked the participants to first evaluate the colorizations
+of 3 black and white photographs and then evaluate the
+ri-colorizations of 4 originally colored images. The 124 participants had to score how realistic was each
+colorization in a scale from 1 (not realistic at all) to 5 (very
+realistic). The test includes only the best colorizers, namely
+Eccv16, Siggraph17, ChromaGAN and InstColorization.
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/turing_test.png" width="48%"/>
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/turing_test_results.png" width="48%"/>
+</p>
+
+# Image classification with AlexNET
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/classification_accuracy.png" width="60%"/>
+</p>
+
+We consider the AlexNet classifier pre-trained
+on ImageNet and we tested it on our subset of ImageNet. The results are reported in the first row of the table above, but since the accuracies are all relatively low, we decided to apply feature
+extraction to better focus on our ImageNet subset. In this new setting all the models except the
+Baseline are able to outperform the black and white images. 
+Therefore we can say that colors play an important role in image classification. 
+The best model according to these experiments are ChromaGAN and InstColorization.
+
+For a further comparison, we applied finetuning on AlexNet to perform
+classification on the birds and flowers images, which
+present more vibrant and diverse colors than our ImageNet
+subset. In this new setting we have, a greater gap than before between the original and
+the black and white accuracies, meaning that the color is much more relevant in this other dataset to recognize the depicted objects. Indeed, all the models including the
+Baseline with cartoonization are able to improve the accuracy
+with respect to the black and white images and the best models in this setting are the two from Zhang, that are able to generalize better than the other. Moreover we can notice that the Baseline with cartoonization always reaches a slightly better accuracy than the baseline without colorization.
+
+# Image filtering
+
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/filtering.png" width="60%"/>
+</p>
+
+In general, a blurred image is harder to colorize, and the
+more blurred the image is, the worse the final colorization
+we get. On the contrary,
+images with a higher contrast and luminance get a better
+colorization by all the models, with just a few exceptions
+depending on the specific image.
+Clearly, with cartoonization we reach very unrealistic
+colors. In the example above, on the left, it looks like the model didn’t recognize
+the grass and probably mistook it for water. Probably,
+this is not due to the fact that cartoonization discards some
+details from the original images, because blurring does the
+same. This could be rather due to the fact that the models
+are not trained on cartoonized images and expect a completely
+different "image style" in input. In conclusion, this is a good example of how the
+colorization is an ambiguous task: the model colors the
+grass with a plausible green tone, which actually could result
+more realistic than the original brown tone.
 
 ### Requirements
 - python 3.6 or 3.8
