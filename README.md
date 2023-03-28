@@ -1,4 +1,4 @@
-# Image colorization methods: a Review
+# Image colorization methods: a review
 
 The colorization of greyscale images is an ill-posed
 problem that was approached in different ways in literature.
