@@ -1,6 +1,6 @@
 # Image colorization methods: a review
 
-<img align="right" width="20%" src="https://www.guidingtech.com/wp-content/uploads/black-and-white-to-color-online-fi_4d470f76dc99e18ad75087b1b8410ea9.jpg">
+<img align="right" width="30%" src="https://www.guidingtech.com/wp-content/uploads/black-and-white-to-color-online-fi_4d470f76dc99e18ad75087b1b8410ea9.jpg">
 
 The colorization of greyscale images is an ill-posed
 problem that was approached in different ways in literature.
