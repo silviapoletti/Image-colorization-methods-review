@@ -20,11 +20,7 @@ images obtained starting
 from 18 originally colored images.
 Our data includes heterogeneous images, representing
 different environments, situations and subjects, coming
-from various sources.
-
-<p align="center">
-  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/datasets.png" width="60%"/>
-</p>
+from various sources:
 
 - Imagenette: https://github.com/fastai/imagenette
 - Pascal: https://deepai.org/dataset/pascal-voc
