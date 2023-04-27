@@ -1,5 +1,7 @@
 # Image colorization methods: a review
 
+<img align="right" width="20%" src="https://images.app.goo.gl/v1PTgXyZ7Umaw4Dr5">
+
 The colorization of greyscale images is an ill-posed
 problem that was approached in different ways in literature.
 This project provides a comparative analysis concerning
